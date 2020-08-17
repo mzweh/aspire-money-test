@@ -1,0 +1,105 @@
+@media only screen and (max-width: 575.98px) {
+    * {}
+    body {
+        font-size: 13px;
+    }
+    main {
+        margin-bottom: 70px;
+    }
+    .secTitle {
+        margin-bottom: 1.5em!important;
+    }
+    .secTitle h2 {
+        font-size: 1.8em;
+        /* padding-bottom: 1em; */
+    }
+    .secTitle h2::before {
+        left: -5%;
+    }
+    .secTitle h2::after {
+        right: -10%;
+        width: 10%;
+    }
+    .secTitle .subHeadLines {
+        margin-bottom: 1em;
+    }
+    /*=================================================== HOME BANNER ===================================================*/
+    .mainBanner {
+        height: auto;
+        padding-bottom: 2em;
+    }
+    .mainBanner .bannerCopy {
+        text-align: center;
+        padding: 2em 0;
+    }
+    .quoteForm form .btnGroup .btn {
+        padding: 0.3em 0.9em;
+        font-size: 0.9em;
+        line-height: 2;
+    }
+    .slider.slider-horizontal {
+        width: 165px;
+    }
+    /*=================================================== WHY US ===================================================*/
+    .whyUs .whyUsWrapper .whyItem {
+        height: auto;
+    }
+    .factSec .factPr {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .factSec .factPr:not(:last-child) {
+        padding-right: 0;
+        border-right: 1px solid #d3d2ce;
+    }
+    .factSec .factPr .factItem {
+        padding-right: 1em;
+        border-right: 0;
+    }
+    .factSec .factItem h3 {
+        font-size: 1.6em;
+    }
+    .factSec .factItem h3 small {
+        text-align: center;
+    }
+    .solutionArea {
+        border-radius: 0;
+        padding: 2em;
+    }
+    .solutionArea .content::before {
+        top: auto;
+        bottom: -1em;
+        width: 90px;
+        height: 2px;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+    .solutionArea .content h3 {
+        text-align: center;
+    }
+    .solutionArea .solution-info {
+        padding-left: 0;
+        display: flex;
+        justify-content: center;
+    }
+    .solutionArea .solution-info i {
+        position: relative;
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        font-size: 25px;
+        left: 0;
+    }
+    .solutionArea .solution-info h3 {
+        font-size: 1.6em;
+        padding-left: .5em;
+    }
+    .blogSec {
+        padding: 5em 1.5em;
+    }
+    .mapSec iframe {
+        height: 285px;
+    }
+}

@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="csrf-token" content="V3zg8PVEviZhEpbuX8ktI6fIz1r2x28ZWFAnSko8">
+    <title>Instant Loan</title>
+    <meta name="description" content="Instant Loan" />
+    <meta name="keywords" content="Instant Loan" />
+    <meta name="author" content="MUZI FOR ASPIRE MONEY">
+    <meta name="distribution" content="Global">
+    <meta name="copyright" content="Instant Loan">
+
+    <!-- FACEBOOK -->
+    <meta property="og:title" content="Instant Loan | Home">
+    <meta property="og:description" content="" />
+    <meta property="og:image" content="" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:url" content="">
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Instant Loan">
+
+    <!-- favicons -->
+    <link rel="icon" type="image/png" href="img/favico.png">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/vendors/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/vendors/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="css/vendors/flaticon.css">
+    <link rel="stylesheet" type="text/css" href="css/vendors/instant-loan.css">
+    <link rel="stylesheet" type="text/css" href="css/vendors/aos.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <!-- RESPONSIVE -->
+    <link rel="stylesheet" type="text/css" href="css/responsive/md.css">
+    <link rel="stylesheet" type="text/css" href="css/responsive/sm.css">
+    <link rel="stylesheet" type="text/css" href="css/responsive/xs.css">
+    <link rel="stylesheet" type="text/css" href="css/responsive/xxs.css">
+    <style type="text/css">
+        body {
+            transition: background-color 1s ease-out;
+        }
+        
+        body.loading {
+            background-color: #15549A;
+            overflow: hidden;
+        }
+        
+        .loader {
+            position: fixed;
+            display: block;
+            width: 145px;
+            text-align: center;
+            top: 45vh;
+            left: 0;
+            right: 0;
+            margin-left: auto;
+            margin-right: auto;
+            transition: all 0.5s ease-in;
+            transform: scale(0);
+            z-index: 3000;
+            opacity: 0;
+        }
+        
+        .loader .logo {
+            display: block;
+            max-width: 125px;
+            margin-bottom: 1em;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .loading .loader {
+            transform: scale(1);
+            opacity: 1;
+        }
+        
+        .loading header,
+        .loading main,
+        .loading footer {
+            opacity: 0;
+        }
+        
+        header,
+        main,
+        footer {
+            opacity: 1;
+            transition: opacity .6s ease-in;
+            -webkit-transition: opacity .6s ease-in;
+            -moz-transition: opacity .6s ease-in;
+            -ms-transition: opacity .6s ease-in;
+            -o-transition: opacity .6s ease-in;
+        }
+    </style>
+</head>
+
+<body class="home loading">
+
+    <div class="loader">
+        <img class="logo" src="img/loader-icon.png" alt="">
+        <img class="loaderIcon" src="img/loader.svg" alt="">
+    </div>
+    <header>
+        <div class="mainNav" id="mainNav">
+            <div class="container">
+                <nav class="nav">
+                    <ul class="nav socialLinks">
+                        <li class="nav-item navItem"><a href="#" class="nav-link navLink"><i class="icon icon-facebook"></i></a></li>
+                        <li class="nav-item navItem"><a href="#" class="nav-link navLink"><i class="icon icon-twitter"></i></a></li>
+                        <li class="nav-item navItem"><a href="#" class="nav-link navLink"><i class="icon icon-skype-outline"></i></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="mainBanner">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-7">
+                        <div class="bannerCopy">
+                            <h1 data-aos="fade-up" data-aos-delay="100">Instant Approval For Car Loan</h1>
+                            <p data-aos="fade-up" data-aos-delay="150">Lowest Interest Rates - Calculate EMI - Check Eligibility - Instant e-Approval - Special Offers</p>
+                            <h2 data-aos="fade-up" data-aos-delay="200">7.25% <span>For New Car</span></h2>
+                            <h2 data-aos="fade-up" data-aos-delay="200">8.30% <span>For Old Car</span></h2>
+                            <a href="javascript:void(0)" class="btn btn-secondary btn-outline _jsScrollDownArrow" data-aos="fade-up" data-aos-delay="250" data-to="whyUs">Why Choose Us ?</a>
+                        </div>
+                    </div>
+                    <div class="col-sm-5">
+                        <div class="quoteForm" data-aos="fade-left" data-aos-delay="300">
+                            <h2>Request Quote Now</h2>
+                            <h4>Easy to apply for a loan with us,Once you have complete this form. </h4>
+                            <form action="#" method="POST" id="quoteForm">
+                                <div class="form-group"><input type="text" name="name" class="form-control" placeholder="Name" data-validation="required" data-validation-error-msg="Please fill in your name."></div>
+                                <div class="form-group"><input type="email" name="email" class="form-control" placeholder="E-mail" data-validation="email"></div>
+                                <div class="form-group"><input type="text" name="phone" class="form-control" placeholder="Phone" data-validation="length number" data-validation-length="min10" data-validation-error-msg="Please fill in your mobile number."></div>
+                                <div class="form-group"><input type="text" id="city" name="city" class="form-control" placeholder="Type Your City Name" data-validation="required" data-validation-error-msg="Please fill in your city."></div>
+                                <div class="form-group"><input type="text" class="form-control" name="zip_code" placeholder="Zip Code" data-validation="length number" data-validation-length="min4" data-validation-error-msg="Please fill in your zip code."></div>
+
+                                <div class="form-group">
+                                    <div class="button-slider">
+                                        <div class="btn-group btnGroup">
+                                            <div class="btn amountBtn">Amount </div>
+                                            <div class="btn sliderBtn">
+                                                <input id="amount" type="text" name="amount" data-slider-min="1" data-slider-max="30000" data-slider-step="1" data-slider-value="6060" />
+                                                <div class="valueLabel"><span class="text_span">Amount &nbsp; &nbsp;</span> R<span id="sliderValue">6060</span></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button type="submit" class="btn btn-primary submitQuote _jsSubmitQuote">Send Request</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="whyUs" id="whyUs">
+            <div class="container">
+                <div class="secTitle" data-aos="fade-down" data-aos-delay="200">
+                    <h2>Why people choose us</h2>
+                    <div class="subHeadLines">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+
+                </div>
+
+                <div class="row whyUsWrapper">
+                    <div class="col-6 col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+                        <div class="whyItem">
+                            <div class="itemIcon"><i class="flaticon-guarantee"></i></div>
+                            <h3>Guarantee</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+                            <a href="#" class="learnBtn">Learn More</a>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="450">
+
+                        <div class="whyItem">
+                            <div class="itemIcon"><i class="flaticon-speed"></i></div>
+                            <h3>Speed</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+                            <a href="#" class="learnBtn">Learn More</a>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="600">
+                        <div class="whyItem">
+                            <div class="itemIcon"><i class="flaticon-reliability"></i></div>
+                            <h3>Reliability</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+                            <a href="#" class="learnBtn">Learn More</a>
+                        </div>
+
+                    </div>
+                    <div class="col-6 col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="750">
+                        <div class="whyItem">
+                            <div class="itemIcon"><i class="flaticon-user-experience"></i></div>
+                            <h3>Experience</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+                            <a href="#" class="learnBtn">Learn More</a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="solutionArea container" data-aos="fade-down" data-aos-delay="200">
+            <div class="row align-items-center">
+                <div class="col-md-6 col-lg-7">
+                    <div class="content">
+                        <h3>We are here to help your business Call to discuss your Solution</h3>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-5">
+                    <div class="solution-info">
+                        <i class="flaticon-telephone"></i>
+                        <h3>
+                            <a href="tel:27313125678">+27 31 312 5678</a>
+                        </h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="factSec">
+            <div class="container">
+                <div class="row" data-aos="fade-up" data-aos-delay="300">
+                    <div class="col-3 factPr">
+                        <div class="factItem">
+                            <h3><span class="numCounter">1000</span>+ <small>Happy Clients</small></h3>
+                        </div>
+                    </div>
+                    <div class="col-3 factPr">
+                        <div class="factItem">
+                            <h3>R<span class="numCounter">430</span>M <small>Car Loan</small></h3>
+                        </div>
+                    </div>
+                    <div class="col-3 factPr">
+                        <div class="factItem">
+                            <h3><span class="numCounter">1000</span><small>Awards</small></h3>
+                        </div>
+                    </div>
+                    <div class="col-3 factPr">
+                        <div class="factItem">
+                            <h3><span class="numCounter">99</span>% <small>Guaranteed</small></h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="teamSec">
+            <div class="container">
+                <div class="secTitle" data-aos="fade-down" data-aos-delay="200">
+                    <h2>Meet the team</h2>
+                    <div class="subHeadLines">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                </div>
+
+                <div class="row" data-aos="fade-up" data-aos-delay="300">
+                    <div class="col-6 col-sm-3">
+                        <div class="teamItem">
+                            <div class="teamImg">
+                                <img src="img/team/team1.jpg" alt="" class="img-fluid">
+                                <ul class="socialLink">
+                                    <li><a href="#" class="linkItem" target="_blank"><i class="icon icon-facebook"></i></a></li>
+                                    <li><a href="#" class="linkItem" target="_blank"><i class="icon icon-twitter"></i></a></li>
+                                    <li><a href="#" class="linkItem" target="_blank"><i class="icon icon-whatsapp"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="teamDescription">
+                                <h3>Jerome Le Luel</h3>
+                                <span>Managing Director</span>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="col-6 col-sm-3">
+                        <div class="teamItem">
+                            <div class="teamImg">
+                                <img src="img/team/team2.jpg" alt="" class="img-fluid">
+                                <ul class="socialLink">
+                                    <li><a href="#" class="linkItem" target="_blank"><i class="icon icon-facebook"></i></a></li>
+                                    <li><a href="#" class="linkItem" target="_blank"><i class="icon icon-twitter"></i></a></li>
+                                    <li><a href="#" class="linkItem" target="_blank"><i class="icon icon-whatsapp"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="teamDescription">
+                                <h3>Laura Wright</h3>
+                                <span>Chief Executive Officer</span>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="col-6 col-sm-3">
+                        <div class="teamItem">
+                            <div class="teamImg">
+                                <img src="img/team/team3.jpg" alt="" class="img-fluid">
+                                <ul class="socialLink">
+                                    <li><a href="#" class="linkItem" target="_blank"><i class="icon icon-facebook"></i></a></li>
+                                    <li><a href="#" class="linkItem" target="_blank"><i class="icon icon-twitter"></i></a></li>
+                                    <li><a href="#" class="linkItem" target="_blank"><i class="icon icon-whatsapp"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="teamDescription">
+                                <h3>Harry Nelis</h3>
+                                <span>Technology Officer</span>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                    <div class="col-6 col-sm-3">
+                        <div class="teamItem">
+                            <div class="teamImg">
+                                <img src="img/team/team4.jpg" alt="" class="img-fluid">
+                                <ul class="socialLink">
+                                    <li><a href="#" class="linkItem" target="_blank"><i class="icon icon-facebook"></i></a></li>
+                                    <li><a href="#" class="linkItem" target="_blank"><i class="icon icon-twitter"></i></a></li>
+                                    <li><a href="#" class="linkItem" target="_blank"><i class="icon icon-whatsapp"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="teamDescription">
+                                <h3>Royce M. Larsen</h3>
+                                <span>Chief Financial Officer</span>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="clientTestimonials">
+            <div class="container">
+
+                <div class="secTitle" data-aos="fade-down" data-aos-delay="200">
+                    <h2>What our clients say</h2>
+                    <div class="subHeadLines">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+
+                </div>
+
+                <div class="swiper-container testimonialSlider" data-aos="fade-up" data-aos-delay="300">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="clientItem">
+                                <div class="clientInfo">
+                                    <img src="img//team/team3.jpg" alt="image">
+                                    <h4>Markus Twain</h4>
+                                    <span>Client</span>
+                                </div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.</p>
+                                <div class="clientIcon">
+                                    <i class="flaticon-right-quote"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="clientItem">
+                                <div class="clientInfo">
+                                    <img src="img/team/team2.jpg" alt="image">
+                                    <h4>Jessica Molony</h4>
+                                    <span>CEO</span>
+                                </div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.</p>
+                                <div class="clientIcon">
+                                    <i class="flaticon-right-quote"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="clientItem">
+                                <div class="clientInfo">
+                                    <img src="img//team/team3.jpg" alt="image">
+                                    <h4>Markus Twain</h4>
+                                    <span>Client</span>
+                                </div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.</p>
+                                <div class="clientIcon">
+                                    <i class="flaticon-right-quote"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="clientItem">
+                                <div class="clientInfo">
+                                    <img src="img/team/team2.jpg" alt="image">
+                                    <h4>Jessica Molony</h4>
+                                    <span>CEO</span>
+                                </div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.</p>
+                                <div class="clientIcon">
+                                    <i class="flaticon-right-quote"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="blogSec container">
+
+            <div class="secTitle" data-aos="fade-down" data-aos-delay="200">
+                <h2>Success story posts</h2>
+                <div class="subHeadLines">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+            </div>
+
+            <div class="row" data-aos="fade-up" data-aos-delay="300">
+                <div class="col-6 col-sm-4">
+                    <div class="blogItem">
+                        <a href="#"><img src="img/blog/image1.jpg" alt="" class="img-fluid"></a>
+                        <span>05 August 2020</span>
+                        <h3><a href="#">Financing loans available to small businesses</a></h3>
+                        <a href="#">Read More</a>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-4">
+                    <div class="blogItem">
+                        <a href="#"><img src="img/blog/image2.jpg" alt="" class="img-fluid"></a>
+                        <span>5 August 2020</span>
+                        <h3><a href="#">5 Ways you can prepare your business for success</a></h3>
+                        <a href="#">Read More</a>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-4">
+                    <div class="blogItem">
+                        <a href="#"><img src="img/blog/image3.jpg" alt="" class="img-fluid"></a>
+                        <span>6 August 2020</span>
+                        <h3><a href="#">Tips for saving money and better guide for investment</a></h3>
+                        <a href="#">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="brandsSec">
+            <div class="container">
+                <div class="swiper-container brandSlider">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="" alt=""></div>
+                        <div class="swiper-slide"><img src="" alt=""></div>
+                        <div class="swiper-slide"><img src="" alt=""></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contactUs">
+            <div class="container">
+
+                <div class="secTitle" data-aos="fade-down" data-aos-delay="200">
+                    <h2>What our clients say</h2>
+                    <div class="subHeadLines">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+
+                </div>
+
+                <div class="row" data-aos="fade-up" data-aos-delay="300">
+                    <div class="col-md-6">
+                        <div class="contactSideBox">
+
+                            <div class="infoBox mb-4">
+                                <div class="icon">
+                                    <i class="flaticon-pin"></i>
+                                </div>
+                                <h4>Address</h4>
+                                <span>6890 Blvd, 15 Nollsworth Cres, Nollsworth Park, La Lucia, 4051</span>
+                            </div>
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="infoBox">
+                                        <div class="icon">
+                                            <i class="flaticon-phone-call"></i>
+                                        </div>
+
+                                        <h4>Phone</h4>
+                                        <span>
+                                            <a href="tel:27313125678">+27 31 312 5678</a>
+                                        </span>
+                                        <span>
+                                            <a href="tel:27313125676">+27 31 312 5676</a>
+                                        </span>
+                                    </div>
+
+                                </div>
+                                <div class="col-6">
+
+                                    <div class="infoBox">
+                                        <div class="icon">
+                                            <i class="flaticon-email"></i>
+                                        </div>
+
+                                        <h4>Email</h4>
+                                        <span>
+                                            <a href="mailto:hello@istantloan.com">hello@istantloan.com</a>
+                                        </span>
+                                        <span>
+                                            <a href="mailto:quote@istantloan.com">quote@istantloan.com</a>
+                                        </span>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <form action="#" method="POST" class="contactForm" id="contactForm">
+                            <div class="form-group">
+                                <input type="text" name="name" id="name" class="form-control" placeholder="Name" data-validation="required" data-validation-error-msg="Please fill in your name." />
+                            </div>
+
+                            <div class="form-group">
+                                <input type="text" name="mobileNo" id="mobileNo" class="form-control" placeholder="Phone No" data-validation="length number" data-validation-length="min10" data-validation-error-msg="Please fill in your number." />
+                            </div>
+
+                            <div class="form-group">
+                                <input type="email" name="emil" id="email" class="form-control" placeholder="Email Address" data-validation="email" />
+                            </div>
+
+                            <div class="form-group mb-sm-5">
+                                <textarea name="email" id="email" cols="30" rows="4" class="form-control" placeholder="Message" data-validation="required" data-validation-error-msg="Please fill in your message."></textarea>
+                            </div>
+
+                            <div class="form-group">
+                                <button class="btn btn-primary _jsSubmitContact">Send Message</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mapSec">
+            <div class="container-fluid px-0">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d55437.7956561018!2d31.008321310133326!3d-29.723749802827278!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ef704e2a87e065f%3A0xda605ae8c39828a0!2sMount%20Edgecombe%2C%204302!5e0!3m2!1sen!2sza!4v1597570742229!5m2!1sen!2sza"></iframe>
+            </div>
+        </section>
+    </main>
+    <footer id="footerHieght">
+        <div class="footerBottom">
+            <div class="container copyRight">© Copyright 2020 Instant Loan
+                <div class="nav legalNav">
+                    <a href="#" class="navItem" target="_blank">Privacy Policy</a>
+                    <a href="#" class="navItem" target="_blank">Terms &amp; Conditions</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <a href="#top" class="btn back-to-top" id="backTop"><i class="icon icon-up-open"></i></a>
+</body>
+
+<script type="text/javascript" src="js/vendors/jquery-3.5.1.min.js"></script>
+<script type="text/javascript" src="js/vendors/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/vendors/swiper.min.js"></script>
+<script type="text/javascript" src="js/vendors/alertify.min.js"></script>
+<script type="text/javascript" src="js/vendors/jquery.form-validator.min.js"></script>
+<script type="text/javascript" src="js/vendors/aos.js"></script>
+<script type="text/javascript" src="js/vendors/modernizr.js"></script>
+<script type="text/javascript" src="js/vendors/price.slider.js"></script>
+<script type="text/javascript" src="js/vendors/waypoints.js"></script>
+<script type="text/javascript" src="js/vendors/counterup.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+<script type="text/javascript">
+    AOS.init({
+        easing: 'ease-in-out-quad',
+        once: true
+    });
+</script>
+
+</html>
